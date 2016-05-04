@@ -1,6 +1,7 @@
 
 # Usage
 
+```javascript
 var Promise = require('bluebird');
 
 horseObj = { drink: function(cb) { cb('slurp'); } };
@@ -11,3 +12,4 @@ horse.drinkAsync().then(function(data){
   console.log(data);
      // Can use here, now promisified normally.
 });
+```
